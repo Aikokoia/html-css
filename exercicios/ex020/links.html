@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-nr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        a {
+            color: rgb(42, 61, 165);
+            text-decoration: none;
+        }
+        a:visited {
+            color: chocolate;
+        }
+        a:hover {
+            text-decoration: underline ;
+            color: black;
+        }
+        a:active {
+            color: orange
+        }
+        .especial::before {
+            content: "⭑";
+        }
+        .especial::after {
+            content: "⭑";
+        }
+        .especial:hover {
+            background-color: blueviolet;
+        }
+        .coco:hover {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <h1>PERSONALIZANDO LINKS</h1>
+      <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank"> Repositório Guanabara </a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do youtube</a></li>
+        <li class="especial"><a href="https://cursoemvideo.com" target="_blank">Curso em video</a></li>
+      </ul>
+
+      <p class="coco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis beatae eaque molestias nesciunt ipsam, fugiat pariatur id sed voluptatibus impedit velit accusantium ipsa animi sequi autem quia tenetur minima.
+      </p>
+</body>
+</html>

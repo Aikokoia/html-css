@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexiveis</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos no navegador</p>
+  <picture>
+    <source media="(max-width: 750px )" srcset="Imagens/foto-P.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="Imagens/foto.M.png" type="image/png">
+    <img src="Imagens/foto-G.png" alt="foto grande">
+  </picture>
+  <h1>Reproduzindo aúdios</h1>
+     <p>Vamos aprender agora a como colocar aúdios no seu site</p>
+
+     <audio src="midia/teto.mp3"  controls ></audio>
+
+     <audio>
+          <source src="midia/merrygo.mpeg" type="audio/mp3">
+          <source src="midia/teto.ogg" type="audio/ogg">
+     </audio>
+     <p>Infelizmente seu navegador não pode reproduzir aúdio</p>
+        <p><a href="midia/teto.mp3" download="midia/teto.mp3" >Audio para download</a></p>
+</body>
+</html>
