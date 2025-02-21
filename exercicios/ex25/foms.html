@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        p {
+            margin-bottom: 0px;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form autocomplete="off" action="formulario.php" method="post">
+
+        <p><label for="nome">Nome:</label></p> 
+
+        <input type="text" name="nome" id="nome">
+
+        <p><label for="Snome">Sobrenome:</label></p> 
+
+        <input type="text" name="Snome" id="Snome">
+
+        <input type="submit" value="Enviar" onclick="enviar()">
+        <div id="res">
+
+        </div>
+    </form>
+    <script>
+        function enviar(){
+            N = document.getElementById("nome").value
+            SN = document.getElementById("Snome").value
+            res = document.getElementById("res")
+
+            res.innerText = `Seu nome é ${N} e seu sobrenome é ${SN}`
+            res.innerHTML += `<br> Seu nome: ${N} ${SN}`
+        }
+    </script>
+</body>
+</html>
