@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Lexend+Zetta:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Ribeye+Marrow&display=swap');
+        
+        body{
+            background-color: rgb(61, 48, 48);
+            
+        }
+        main {
+            background-color: lightgray;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-radius: 20px;
+            margin: auto;
+        }
+        h1 {
+            font-family: "Bungee Spice", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 5px;
+            background-color: rgb(133, 123, 109);
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        legend {
+            font-family: "Bungee Spice", serif;
+            font-size: 1.2em;
+            color: rgb(206, 117, 2);
+        }
+        input#enviar{
+            background-color: rgb(255, 172, 117);
+            border-radius: 10px;
+            color: white;
+            border: 0.5px solid black;
+            padding: 4px;
+        }
+        input#limpar{
+            background-color: brown;
+            border-radius: 10px;
+            color: white;
+            border: 0.5px solid black;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Formulário
+        </h1>
+    <fieldset>
+        <legend>Dados pessoais
+        </legend>
+        <form action="formulario.php" method="get">
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+    </fielset>
+        <p>
+            <input type="submit" value="Enviar" id="enviar">
+            <input type="reset" value="Limpar" id="limpar">
+        </p>
+    </form>
+    </main>
+</body>
+</html>
