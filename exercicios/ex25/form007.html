@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="post" autocomplete="off">
+        <fieldset>
+            <legend>Comandos de formulários</legend>
+            <p>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado" >
+                    <optgroup label="Região Sudeste">
+                        
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de janeiro</option>
+                    </optgroup>
+                    <optgroup label="Regioes do norte">
+                        <option value="RN">Rio grande do norte</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="prof">Profissão</label>
+                <input type="text" name="prof" id="prof" list="list">
+                <datalist id="list">
+                    <option value="DEV">desenvolvedor</option>
+                    <option value="CONT">contador</option>
+                    <option value="prof">professor</option>
+                </datalist>
+            </p>  
+            <p>
+                <label for="msg">Mensagem:</label><br>
+                <textarea name="text" id="texto" cols="30" rows="10">
+
+                </textarea>
+
+            </p>      
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
