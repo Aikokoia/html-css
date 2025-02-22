@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Lexend+Zetta:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Ribeye+Marrow&display=swap');
+        
+        body{
+            background-color: rgb(61, 48, 48);
+            
+        }
+        main {
+            background-color: lightgray;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-radius: 20px;
+            margin: auto;
+        }
+        h1 {
+            font-family: "Bungee Spice", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-top: 10px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Teste de formulário</h1>
+    
+    <form action="formulario.php" method="post">
+        <p>
+           <label for="nome">Nome:</label> 
+           <input type="text" name="nome" id="nome" required maxlength="30" autocomplete="off">
+        </p>  
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10" step="0.5">
+        </p>  
+        <p>
+            <label for="periodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="periodo" value="2025-02">
+        </p>
+        <p>
+            <label for="dia">Dia da prova:</label>
+            <input type="date" name="dia" id="dia" value="2025-01-01">
+        </p>
+        <p>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</main>
+</body>
+</html>
