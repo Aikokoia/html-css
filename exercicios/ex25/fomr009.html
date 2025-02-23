@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <main>
+        <form action="formulario.php" method="post">
+            <fieldset>
+                <legend>Idade</legend>
+            <p>
+                <label for="ano">Quando voce nasceu ?</label>
+                <input type="date" name="ano" id="ano" required oninput="calculoid()">
+            </p>
+            <output id="idade" name="idade">
+                <label for="idade">Idade:</label>
+                0
+            </output>
+            <p>
+                <input type="submit" value="Enviar" id="enviar">
+                <input type="reset" value="Limpar" id="limpar">
+            </p>
+
+            </fieldset>
+        </form>
+    </main>
+        <script>
+                function calculoid(){
+                dataatual = new Date();
+                dia = dataatual.getDate();
+                mes = dataatual.getMonth()+1;
+                ano = dataatual.getFullYear();
+                nasc = document.querySelector("input#ano").value
+                anonasc = new Date(nasc).getFullYear();
+                mesnasc = new Date(nasc).getMonth();
+                dianasc = new Date(nasc).getDate();
+                idade = document.getElementById("idade");
+                if (mes > mesnasc || (mes === mesnasc && dia >= dianasc)){
+                    idade.innerHTML = Number(ano)-Number(anonasc)
+                }else {
+                    idade.innerHTML = Number(ano)-Number(anonasc)-1 
+                }
+            } 
+        </script>
+</body>
+</html>
