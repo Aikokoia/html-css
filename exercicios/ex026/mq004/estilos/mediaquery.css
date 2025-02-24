@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*Versão de media query*/
+
+/* tablets em paisagem deitados*/
+
+@media print {
+    h1 {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+
+    }
+    main {
+        margin-top: 30px;
+    }
+img#pc {display: none;}
+img#print{display: block;}
+img#tablet{display: none;}
+img#tv{display: none;}
+img#telefone{display: none;}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    img#telefone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    body{
+        background: url(../imagens/back-tablet.jpg) center center;
+
+    }
+    main {
+        max-width: 450px;
+    }
+}
+
+/* notebooks e algumas telas de computador*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    img#telefone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    body{
+        background: url(../imagens/back-pc.jpg) center center;
+        background-size: contain;
+    }
+    main {
+        max-width: 500px;
+    }
+}
+
+/*monitores de computador grandes e televisoes*/
+@media only screen and (min-width: 1200px) {
+    img#telefone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+    body{
+        background: url(../imagens/back-tv.jpg) center center;
+        background-size: cover;
+    }
+    main {
+        max-width: 600px;
+    }
+}
