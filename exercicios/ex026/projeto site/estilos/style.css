@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --cor1: #003BFA;
+    --cor2: #0169FA;
+    --cor3: #009CFA;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,8 +27,39 @@ header {
 header h1 {
    padding: 40px;
    font-size: 2.5em;
-   font-family: "Sigmar", serif;
+   font-family: "Bree Serif", serif;;
    text-align: center;
+   padding-bottom: 20px ;
+   
+}
+
+
+header div {
+    background: url(../imagens/pngtree-minecraft-character-with-an-axe-clipart-vector-png-image_6980696.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+   background-size: contain;
+   height: 300px;
+   
+}
+
+span.material-symbols-outlined{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+span.material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.433);
+    width: 100px;   
+    margin: auto;
+    border-radius: 20px;
+    transition-delay: 0.2s;
+}
+
+header menu {
+    display: none;
 }
 
 header menu a {
@@ -36,13 +75,43 @@ header menu a {
     border:1px solid black;
     margin-top: 2px;
     text-shadow: none;
+    transition: transform 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 
 header menu a:hover{
     background-color: rgba(128, 128, 128, 0.333);
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    
 }
-menu ul {
+menu ul, main ul {
     list-style-type: none;
+}
+
+main {
+    
+}
+
+main article{
+    font-family: monospace;
+    margin: 15px;
+    background-color: var(--cor3);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main article h2 {
+    color: white;
+    font-size: 2em;
+}
+
+main article h3 {
+    color: white;
+}
+
+main article p {
+    text-indent: 3px;
+    margin: 5px;
 }
 
