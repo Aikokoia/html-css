@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around ;
+            align-items: center;
+
+        }
+        main{
+            margin-top: 70px;
+            background-color: rgb(74, 147, 123);
+            height: 80vh;
+            width: 90vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: aqua;
+             height: 200px;
+             width: 200px;
+             border-radius: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+   <main>
+        <section>
+            <h1>Tela de login</h1>
+        </section>
+   </main>
+</body>
+</html>
