@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgray;
+}
+header{
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header > h1#titulo{
+    margin-left: 5px;
+    height: 40px;
+    color: white;
+    text-shadow: -1px 1px 1px black;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > menu#lista > a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+header > menu#lista > a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+header > menu#lista {
+   margin-top: 14px;
+   margin-right: 5px;
+}
+
+main {
+ display: flex;
+ justify-content: center;
+}
+
+main > section{
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+
+    text-indent: 5px;
+    text-align: justify;
+    max-width: 700px;
+    
+}
+
+main > section > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 400px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 300px;
+        
+    }
+    header > menu#lista > a{
+        padding-left: 210px;
+        padding-right: 210px;
+        margin: 2px;
+    }
+    header > menu#lista {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+    
